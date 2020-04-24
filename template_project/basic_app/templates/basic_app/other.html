@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends "basic_app/basic.html" %}  <!--here i extend my template and inharit the code from basic.html file i mean reuse the code. this is the template inheritance-->
+
+    {% block body_block %}
+
+	<h1>Welcome to other page Mamun</h1>
+	<h2>This is the example of template inheritance</h2>
+
+	<!--<h1>{{ text|upper }}</h1> template filter-->
+	<h1>{{ text|cut:'World' }}</h1> <!-- this cut function is my own custom filtering function -->
+	<h1>{{ number|add:"99" }}</h1>
+	
+
+	{% endblock %}
+
